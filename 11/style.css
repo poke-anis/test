@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f182f;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navgauche {
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    height: 90vh;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.logo {
+    width: 100%;
+    display: grid;
+    background-color: #ea9e49;
+    font-size: 30px;
+    text-align: center;
+    height: 10vh;
+    place-items: center;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.logo p {
+    margin: 0px;
+}
+
+li{
+    padding: 10px 10px;
+    margin: 0 10px;
+}
+
+.selected {
+    padding-bottom: 1px;
+    border-bottom: 2px solid #ea9e49;
+}
+
+.logocenter {
+    font-size: 40px;
+    color: #ea9e49;
+    font-weight: bold;
+}
+
+.navdroite {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 70px;
+
+}
+.navdroite img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+main {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    display: flex;
+    width: 5vw;
+    height: 75vh;
+    justify-content: space-around;
+    align-content: space-around;
+    flex-direction: column ;
+    margin-top: 50px;
+}
+.social  {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.circle>a ,.social>a{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.circle> a {
+    margin-top: 25px;
+    font-size: 0.4rem;
+}
+.circle {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    height: 80vh;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.content h1 {
+    padding-bottom: 30px;
+    border-bottom: 2px solid #ea9e49;
+    font-weight: 700;
+    font-size: 55px;
+    width:100%;
+    text-shadow: 0 0 5px #fff;
+}
+.content p{
+    color: gray;
+    font-weight: 300px;
+}
+.content input {
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 15px;
+    background-color: gray;
+    border: 1px none;
+}
+
+button {
+    display: inline-block;
+    background-color: #ea9e49 ;
+    color: white;
+    border-radius: 50%;
+    border: 5px none;
+    height: 40px;
+    width: 40px;
+}
+.pics {
+    display:flex;
+    width: 40vw;
+    flex-wrap: wrap;
+    height: 90vh;
+}
+.pics>p {
+    height: 1vh;
+    margin-top: 70px;
+    margin-left: 30px;
+    font-weight: 800;
+}
+.images {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.image1 ,.image2{
+    background-color: #212A40;
+    flex-basis: 45%;
+    height: 88%;
+    border-radius: 5%;
+}
+.image1 button,.image2 button {
+    position: relative;
+    left: 80%;
+    
+}
+
+.image1 p ,.image2 p{
+    padding: 0 10px;
+    font-size: 60%;
+}
+.image1 h4,.image2 h4{
+    padding: 0 10px;
+}
+
+.imagegauche {
+    height: 200px;
+    width: 100%;
+    background: no-repeat url("Capture1.JPG");
+    background-size: cover;
+    border-radius: 5%;
+}
+.imagedroite {
+    height: 200px;
+    width: 100%;
+    background: no-repeat url("https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg");
+    background-size: cover;
+    border-radius: 5%;
+}
