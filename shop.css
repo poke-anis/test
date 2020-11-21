@@ -1,0 +1,51 @@
+.en-tete ,main{
+    display: flex;
+}
+.en-tete{
+    height: 20vh;
+    background-color: orangered;
+}
+.site{
+    text-align: center;
+}
+
+.int{
+    border-style: solid ;
+    border-color: gray;
+    border-width: 2px;   
+    width: 300px;
+}
+.flex {
+    display: flex
+}
+
+.int >img{
+    flex-basis: 2;
+}
+
+.intra{
+    flex-grow: 2;
+}
+
+.intracart {
+    
+}
+
+.intracart>*{
+
+}
+#cart {
+    float: right;
+}
+
+i {
+    margin: 10px;}
+input{
+    width: 30px;
+}
+main {
+    height: 80vh;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}

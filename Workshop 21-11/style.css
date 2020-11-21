@@ -1,0 +1,6 @@
+#printb ,#input{
+    border-style: solid;
+    border-color: black;
+    height: 200px;
+    width: 400px;
+}
