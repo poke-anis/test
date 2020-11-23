@@ -1,0 +1,24 @@
+ALGORITHM COUNT_SENTENCE
+VAR
+    CHARA : CHAR 
+    NMB_CHARA : INTEGER := 0;
+    NMB_VYL : INTEGER := 0;
+    NMB_WRD : INTEGER := 0;
+BEGIN
+    REPEAT
+        Read(CHARA)
+        IF (CHARA <> " ") THEN //si CHARA n'est pas un espace
+            IF (CHARA = "a"or"e"or"i"or"o"or"u"or"y") THEN
+                NMB_CHARA := NMB_CHARA + 1
+                NMB_VYL := NMB_VYL + 1
+            ELSE
+                NMB_CHARA := NMB_CHARA + 1
+            END_IF
+        ELSE //si c'est un espace
+            NMB_WRD := NMB_WRD + 1
+        END_IF
+    UNTIL (CHARA = ".")
+    Write(NMB_CHARA)
+    Write(NMB_WRD)
+    Write(NMB_VYL)
+END
