@@ -1,0 +1,40 @@
+ALGORITHM Problem1_Solution1
+VAR
+    Arr_1 : ARRAY_OF_INTEGER[4];
+    Arr_2 : ARRAY_OF_INTEGER[5];
+    i : INTEGER = 0;
+    j : INTEGER = 0;
+BEGIN
+    Arr_1 :={3,1,7,9}
+    Arr_2 :={2,4,1,9,3}
+    REPEAT
+        IF ( Arr_1[i] = Arr_2[j] ) THEN
+            Distinct = FALSE
+            i++
+            j : = 0;
+        ELSE
+            Distinct = TRUE
+            IF (j = Arr_2.lenght && Distinct =TRUE) THEN
+                Sum = Sum + Arr_1[i]
+                i++
+            END_IF  
+            j++
+        END_IF
+    UNTIL ( i >= Arr_1.lenght)
+i : = 0;
+j : = 0;
+    REPEAT
+        IF ( Arr_2[j] = Arr_1[i] ) THEN
+        Distinct = FALSE
+        j++
+        ELSE
+            Distinct = TRUE
+            IF (i = Arr_1.lenght && Distinct =TRUE) THEN
+                Sum = Sum + Arr_2[j]
+                j++
+            END_IF
+            i++
+        END_IF
+    UNTIL ( j >= Arr_2.lenght )
+
+END
