@@ -4,6 +4,7 @@ VAR
     Arr_2 : ARRAY_OF_INTEGER[5];
     i : INTEGER = 0;
     j : INTEGER = 0;
+    Sum : INTEGER = 0;
 BEGIN
     Arr_1 :={3,1,7,9}
     Arr_2 :={2,4,1,9,3}
