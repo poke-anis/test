@@ -1,0 +1,32 @@
+ALGORITHM Problem1_Solution2
+VAR
+    Arr_1 : ARRAY_OF_INTEGER[4];
+    Arr_2 : ARRAY_OF_INTEGER[5];
+    htab : HASH_TABLE<INTEGER,INTEGER>;
+    i,count : INTEGER
+BEGIN
+    Arr_1 :={3,1,7,9}
+    Arr_2 :={2,4,1,9,3}
+
+        FOR i FROM 0 TO Arr_1.length STEP 1  DO
+            IF (htab.lookup(Arr_1[i]) = TRUE) THEN
+                htab.insert(Arr_1[i],count+1)
+            ELSE
+                htab.insert(Arr_1[i])
+            END_IF
+        END_FOR
+        FOR i FROM 0 TO Arr_2.length STEP 1  DO
+            IF (htab.lookup(Arr_2[i]) = TRUE) THEN
+                htab.insert(Arr_2[i],count+1)
+            ELSE
+                htab.insert(Arr_2[i])
+            END_IF
+        END_FOR
+    REPEAT
+        IF (htab.get(i) = 1) THEN
+            Sum = Sum + i
+        END_IF
+        i++
+    UNTIL (htab.lookup(i) = FALSE)
+    
+END
