@@ -1,0 +1,41 @@
+function addtocart(a) {
+    var prodincart = produits[a];
+    var isInCart = false;
+    for (let index = 0; index < cart.length; index++) {
+        if (cart[index].id == prodincart.id) {
+        cart[index].quantite++;
+        isInCart = true;
+        qnt =`${cart[index].quantite}`
+        }
+    }
+    if (isInCart) {
+        document.getElementById("prod-"+prodincart.id).innerHTML = qnt;
+    } else {
+        cart.push(prodincart)
+        productsCheckoutHtml += 
+`<tr onclick="removefrcart(${prodincart.id})" id="${prodincart.id}">
+<th scope="row">${prodincart.id}</th>
+<td>${prodincart.name}</td>
+<td>${prodincart.price}.00$</td>
+<td id="prod-${prodincart.id}"></td>
+<td><div class="btn btn-danger">Delete</div></td>
+</tr>`;   
+        document.getElementById("cartItems").innerHTML = productsCheckoutHtml;
+        document.getElementById("number").innerHTML = cart.length;
+    }
+    }
+
+const removefrcart = (a) => {
+    
+    document.getElementById("a").remove
+
+}
+
+
+    
+    function removeElement(array, elem) {
+    var index = array.indexOf(elem);
+    if (index > -1) {
+        array.splice(index, 1);
+    }
+    }
