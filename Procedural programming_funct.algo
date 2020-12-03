@@ -1,0 +1,65 @@
+FUNCTION vector_input(s:INTEGER, vec: ARRAY_OF ) : ARRAY_OF INTEGER
+VAR
+    i : INTEGER;
+BEGIN
+    FOR i FROM 0 TO s STEP 1  DO
+        Write("give the `i` element")
+        Read(vec[i])
+    END_FOR
+    RETURN vec[];
+END
+
+FUNCTION dot_product(s:INTEGER, v1: ARRAY_OF INTEGER, v2: ARRAY_OF INTEGER) : INTEGER
+VAR
+    ps : INTEGER;
+    j : INTEGER;
+BEGIN
+        FOR j FROM 0 TO s STEP 1  DO
+            ps = ps + v1[j] * v2[j]
+        END_FOR
+    RETURN ps;
+END
+
+FUNCTION result(a) : STRING
+VAR
+    orthogonal : STRING
+BEGIN
+    IF ( a = 0 ) THEN
+       orthogonal = "The two vectors of the pair `number_of_pair` are orthogonal"
+    ELSE
+         orthogonal = "The two vectors of the pair `number_of_pair` are not orthogonal"
+    END_IF
+    RETURN orthogonal ;
+END
+
+
+FUNCTION steps() : STRING
+VAR
+    i : INTEGER;
+BEGIN
+    FOR i FROM 0 TO number_of_pair STEP 1  DO
+        vec1 := vector_input(size,vec1)
+        vec2 := vector_input(size,vec2)
+        result := dot_product(size,vec1,vec2)
+    END_FOR
+    RETURN orthogonal(result) ;
+END
+
+
+
+
+
+ALGORITHM Dot_product
+VAR
+    vec1 : ARRAY_OF INTEGER;
+    vec2 : ARRAY_OF INTEGER;
+    size : INTEGER;
+    number_of_pair : INTEGER;
+BEGIN
+    Write("give the number of pair of vectors")
+    Read(number_of_pair)
+    Write("give the size of the vector")
+    Read(size)
+    steps()
+END
+
