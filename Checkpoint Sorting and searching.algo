@@ -1,0 +1,24 @@
+ALGORITHM Sorting_and_searching
+VAR
+    Arr : ARRAY_OF_INTEGER[4];
+    i : INTEGER = 0;
+    Tmp : INTEGER = 0;
+    position : INTEGER = 0;
+BEGIN
+    Arr :={2,4,1,9,3}
+    FOR i FROM 1 TO arr.length STEP 1  DO
+        position = i
+        FOR j FROM i-1 TO 0 STEP -1  DO
+            IF ( Arr[i] < Arr[j]) THEN
+                Tmp = Arr[j]
+                Arr[j] = Arr[i]
+                Arr[i] = Tmp
+                IF ( i > 1 ) THEN
+                    i= i-1
+                    END_IF
+                END_IF
+            END_IF
+        END_FOR
+        i = position
+    END_FOR
+END
