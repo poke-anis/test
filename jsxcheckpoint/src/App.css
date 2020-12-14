@@ -1,0 +1,12 @@
+#root,.cont{
+  display: flex;
+  justify-content: center;
+  background-color: greenyellow;
+}
+.cont{
+  flex-direction: column;
+}
+
+.title,.red{
+  color: red;
+}
