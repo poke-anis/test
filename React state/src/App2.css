@@ -1,0 +1,48 @@
+#container{
+  display: flex;
+  height: min-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#intrcontainer{
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  
+}
+
+#cat {
+  border: 2px solid;
+
+ 
+}
+
+#nom {
+  flex-basis: 50%;
+  background-color: #198754;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  
+}
+#nom>p{
+  color: #212529;
+  font-size: larger;
+}
+
+#add{
+  flex-basis: 50%;
+  background-color: #212529;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+}
+#add>div{
+  color: #198754;
+  font-size: larger;
+}
