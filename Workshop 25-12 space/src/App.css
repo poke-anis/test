@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+  width: 300px;
+  margin: auto;
+  
+}
+
+#root {
+
+  height: 100vh;
+  background-image: url(/src/pexels-felix-mittermeier-956981.jpg);
+}
