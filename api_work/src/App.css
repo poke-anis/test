@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+  background-color: #198754;
+  height: min-content;
+  padding: 50px;
+  border-radius: 50px;
+}
+
+.Ap {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+  min-height: 100vh;
+}
